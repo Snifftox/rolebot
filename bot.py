@@ -21,4 +21,4 @@ class MyClient(discord.Client):
 
         
 client = MyClient()
-client.run('my token goes here')
+client.run('TOKEN')
