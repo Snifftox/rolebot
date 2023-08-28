@@ -1,17 +1,12 @@
-# bot.py
-#pip install python-decouple
-#pip install discord
-import os
-from decouple import config
 import discord
 
 
-TOKEN = ""
+class MyClient(discord.Client):
+    async def on_ready(self):
+        print(f'Logged on as {self.user}!')
 
-client = discord.Client()
+    async def on_message(self, message):
+        print(f'Message from {message.author}: {message.content}')
 
-@client.event
-async def on_ready():
-    print(f'{client.user} has connected to Discord!')
-
-client.run(TOKEN)
+client = MyClient()
+client.run('my token goes here')
