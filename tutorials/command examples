@@ -1,0 +1,35 @@
+# Quick Example:
+
+import discord
+
+bot = discord.Bot()
+
+@bot.slash_command()
+async def hello(ctx, name: str = None):
+    name = name or ctx.author.name
+    await ctx.respond(f"Hello {name}!")
+
+@bot.user_command(name="Say Hello")
+async def hi(ctx, user):
+    await ctx.respond(f"{ctx.author.mention} says hello to {user.name}!")
+
+bot.run("token")
+
+
+____________________________
+
+
+# Traditional Commands:
+
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix=">", intents=intents)
+
+@bot.command()
+async def ping(ctx):
+    await ctx.send("pong")
+
+bot.run("token")
