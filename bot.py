@@ -1,6 +1,6 @@
 import discord
 import os
-from slash-msg import slash
+from msgs import slash_msg
 # Load Variables from .env
 from .env import loadEnv
 loadEnv()
@@ -13,7 +13,7 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
         
-    
+    slash_msg()
 
         
 client = MyClient()
