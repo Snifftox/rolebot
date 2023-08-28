@@ -17,3 +17,5 @@ Todo
     - erkennen von reactions auf nachricht
     - automatisch bestimmte reactions unter eigener nachricht posten
     - rollen verteilen anhand von reaction
+
+- s
