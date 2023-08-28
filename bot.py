@@ -1,9 +1,5 @@
-# bot.py
-#pip install python-decouple
-#pip install discord
-import os
-from decouple import config
 import discord
+import os
 
 # Load Variables from .env
 from .env import loadEnv
@@ -11,12 +7,14 @@ loadEnv()
 
 bot = discord.Bot()
 
-TOKEN = os.getenv('DISORD_TOKEN')
+TOKEN = TOKEN = os.getenv('DISORD_TOKEN')
 
-client = discord.Client()
+class MyClient(discord.Client):
+    async def on_ready(self):
+        print(f'Logged on as {self.user}!')
 
-@client.event
-async def on_ready():
-    print(f'{client.user} has connected to Discord!')
+    async def on_message(self, message):
+        print(f'Message from {message.author}: {message.content}')
 
-client.run(TOKEN)
+client = MyClient()
+client.run('my token goes here')
