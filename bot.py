@@ -1,10 +1,11 @@
 import discord
 import os
-from meme import slash_msg
+from msgs import slash_msg
 from discord.ext import commands
 from playground import froehlich
 
 
+from Rols import role
 # Load Variables from .env
 from .env import loadEnv
 loadEnv()
