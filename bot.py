@@ -1,11 +1,12 @@
 # bot.py
+#pip install python-decouple
+#pip install discord
 import os
-
+from decouple import config
 import discord
-from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+
+TOKEN = ""
 
 client = discord.Client()
 
