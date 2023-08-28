@@ -18,4 +18,5 @@ Todo
     - automatisch bestimmte reactions unter eigener nachricht posten
     - rollen verteilen anhand von reaction
 
-- s
+
+ahhh diese gut ja
