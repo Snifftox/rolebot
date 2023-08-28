@@ -1,6 +1,6 @@
 import discord
 import os
-from msgs import slash_msg
+from meme import slash_msg
 # Load Variables from .env
 from .env import loadEnv
 loadEnv()
