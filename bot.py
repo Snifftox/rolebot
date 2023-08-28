@@ -5,9 +5,13 @@ import os
 from decouple import config
 import discord
 
+# Load Variables from .env
+from .env import loadEnv
+loadEnv()
+
 bot = discord.Bot()
 
-TOKEN = ""
+TOKEN = os.getenv('DISORD_TOKEN')
 
 client = discord.Client()
 
