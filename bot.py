@@ -1,7 +1,7 @@
 import discord
 import os
 from msgs import slash_msg
-from User import user
+from Rols import role
 # Load Variables from .env
 from .env import loadEnv
 loadEnv()
