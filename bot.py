@@ -5,6 +5,7 @@ import os
 from decouple import config
 import discord
 
+bot = discord.Bot()
 
 TOKEN = ""
 
