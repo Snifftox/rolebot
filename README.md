@@ -6,3 +6,5 @@ pycord weil die discord.py alt ist
 https://docs.pycord.dev/en/master/index.html
 
 https://guide.pycord.dev/
+
+ahhh diese gut ja
