@@ -5,6 +5,8 @@ from msgs import slash_msg
 from .env import loadEnv
 loadEnv()
 
+TOKEN = os.getenv('DISCORD_TOKEN')
+
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
@@ -17,4 +19,4 @@ class MyClient(discord.Client):
 
         
 client = MyClient()
-client.run('TOKEN')
+client.run(os.getenv('TOKEN'))
