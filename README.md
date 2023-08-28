@@ -20,3 +20,7 @@ Todo
 
 
 ahhh diese gut ja
+
+Personen zuweisung
+ -Niklas Slash msgs z.b.($get Csgo stats)
+ 
