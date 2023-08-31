@@ -1,5 +1,6 @@
 import os
 import discord
+from discord.ext import commands
 import bot
 
 # Janik's Command Spaß Box
