@@ -6,4 +6,4 @@ import bot
 
 @bot.slash_command(name = "Yeet", description = "Yeet a friend!")
 async def yeet(ctx):
-    await ctw.respond("") # Name yeets @name
+    await ctx.respond("") # Name yeets @name
