@@ -1,5 +1,7 @@
-import discord
+import bot
 from bot import client
 
-async def display():
+
+@bot.slash_command(name = "meme", description = "post a meme")
+async def image():
     NotImplemented
